@@ -1,0 +1,27 @@
+---
+import CardServices from "../cards/CardServices.astro";
+
+const services = [
+  {
+    title: "bolsas Ecologicas",
+    description:
+      "Diseñamos bolsas ecológicas personalizadas para tu empresa",
+    image: "/public/commercial/bolsas_ecologicas.jpeg",
+  },
+  {
+    title: "Estampados",
+    description:
+      "Ofrecemos servicios de estampado en camisetas, gorras y otros artículos.",
+    image: "/public/commercial/impresora_estampados.jpg",
+  },
+  {
+    title: "Gorras",
+    description: "Personaliza tus gorras con tu logo o diseño.",
+    image: "/public/commercial/gorras_servicios.jpeg",
+  },
+];
+---
+
+<div class="grid grid-cols-1 sm:grid-cols-3 place-items-center">
+  {services.map((service) => <CardServices {...service} />)}
+</div>

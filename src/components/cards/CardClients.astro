@@ -1,0 +1,29 @@
+---
+interface Props {
+  name: string;
+  message: string;
+}
+
+const { name, message } = Astro.props;
+---
+
+<div class="rounded-lg shadow-xl w-52 h-60 p-2">
+  <section class="relative">
+    <img src="/public/commercial/fondo.jpg" width="200" class="rounded-md" />
+    <div
+      class="absolute inset-16 flex items-center justify-center rounded-full"
+    >
+      <img
+        src="/public/commercial/client.jpg"
+        width="40"
+        class="rounded-full bg-white p-1"
+      />
+    </div>
+  </section>
+  <section class="flex flex-col justify-center mt-6 text-center">
+    <p class="font-bold text-xl text-gray-800 mb-1">{name}</p>
+    <p class="text-sm text-gray-600 italic">
+      {message}
+    </p>
+  </section>
+</div>

@@ -1,0 +1,18 @@
+---
+import CardClients from "../cards/CardClients.astro";
+
+const clientsMessage = [
+  {
+    name: "Danny Ibañez",
+    message: `"Estan muy bonitas ❤️"`,
+  },
+  {
+    name: "Zoe Piña",
+    message: `"Voy a estar mandando a hacer más con ustedes definitivamente"`,
+  },
+];
+---
+
+<div class="grid grid-cols-1 sm:grid-cols-2 place-items-center gap-16">
+  {clientsMessage.map((message) => <CardClients {...message} />)}
+</div>
