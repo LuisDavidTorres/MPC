@@ -8,7 +8,7 @@ interface Props {
 const { title, description, image } = Astro.props;
 ---
 
-<div class="border gap-x-3 rounded-lg w-3/5 bg-white shadow-sm">
+<div class="border rounded-lg w-4/5 h-full bg-white shadow-sm">
   <div class="p-4 space-y-2">
     <img src={image} width="150px" class="rounded-lg w-full shadow-md" />
     <h2 class="font-bold text-light-blue-900/80 text-lg">{title}</h2>
