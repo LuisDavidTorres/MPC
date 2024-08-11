@@ -1,0 +1,27 @@
+---
+import CardWhyChooseUs from "../cards/CardWhyChooseUs.astro";
+
+const whyChooseUs = [
+  {
+    title: "Productos De Alta Calidad",
+    description:
+      "Utilizamos solo materiales y técnicas de impresión de la más alta calidad para garantizar que su ropa y accesorios personalizados se vean geniales y tengan una larga durabilidad.",
+  },
+  {
+    title: "Productos Ecológicos",
+    description:
+      "Ofrecemos una variedad de opciones ecológicas, incluidas bolsas reutilizables fabricadas con materiales sostenibles, para ayudar a reducir la huella de carbono.",
+  },
+  {
+    title: "Precios Asequibles",
+    description:
+      "Nuestros precios son muy competitivos sin comprometer la calidad. Creemos que todo el mundo debería tener acceso a ropa y accesorios de alta calidad a precios asequibles.",
+  },
+];
+---
+
+<div
+  class="grid grid-cols-1 sm:grid-cols-3 md:place-items-start gap-4"
+>
+  {whyChooseUs.map((whyChooseMe) => <CardWhyChooseUs {...whyChooseMe} />)}
+</div>
